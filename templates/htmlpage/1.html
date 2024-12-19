@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body bgcolor="cyan">
+	<<center>
+		<h1><b>employee information</b></h1>
+		<table border="2">
+		<tr>
+			<td><b>eid</b></td>
+			<td><b>ename</b></td>
+			<td><b>ephone_no</b></td>
+			<td><b>esal</b></td>
+			<td><b>eplace</b></td>
+			<td><b>ejob</b></td>
+         </tr>
+         </center>
+        {%for i in emp%}
+         <tr>
+         	<td>{{i.eid}}</td>
+         	<td>{{i.ename}}</td>
+         	<td>{{i.ephone_no}}</td>
+         	<td>{{i.esal}}</td>
+         	<td>{{i.eplace}}</td>
+         	<td>{{i.ejob}}</td>
+         </tr>
+        {%endfor%}
+
+</body>
+</html>
